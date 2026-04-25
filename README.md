@@ -1,51 +1,69 @@
-🛒 Online Retail End-to-End Data Pipeline & Analytics
+# 🛒 Online Retail Data Pipeline & Business Analytics
 
-🎯 Business Objective
-This project aims to transform raw retail transaction data into actionable strategic insights through an automated data workflow. The primary focuses of this project are:
+## 🔍 Project Overview
+This project builds an end-to-end data pipeline to transform large-scale retail transaction data into actionable business insights.
+- Processed and cleaned 500,000+ transaction records, including handling returns and missing values  
+- Built an automated ETL pipeline using Python and PostgreSQL  
+- Performed customer segmentation using RFM (Recency, Frequency, Monetary) analysis  
+- Applied Market Basket Analysis to identify product associations  
+- Developed an interactive Power BI dashboard to monitor sales performance and customer behavior  
+---
+## 🛠️ Tech Stack
+- **Language:** Python (Pandas, NumPy, Scikit-learn, MLxtend)  
+- **Database:** PostgreSQL  
+- **ETL Tools:** SQLAlchemy, pg8000  
+- **Visualization:** Power BI  
 
-Data Integrity: Cleaning over 500k rows of transaction data, including handling returns and missing values.
+---
 
-Customer Retention: Identifying the most valuable customer segments and those at risk of churning using the RFM (Recency, Frequency, Monetary) method.
+## 📊 Key Insights
+- **Seasonality Trend:** Total revenue reached $8.93M, with peak sales in November 2011 ($1.04M), indicating strong seasonal demand  
+- **Customer Segmentation:** Loyal (29.14%) and Champion (24.6%) customers contribute the majority of revenue  
+- **Product Association:** Market Basket Analysis revealed product combinations with lift values up to 8.9x, indicating strong cross-selling opportunities  
 
-Sales Optimization: Discovering product purchase patterns (Market Basket Analysis) to drive effective bundling and cross-selling strategies.
+---
 
-🛠️ Tech Stack
-Language: Python (Pandas, NumPy, Scikit-learn, MLxtend).
+## 💡 Business Impact
+- Supports inventory planning based on seasonal demand patterns  
+- Enables targeted marketing through customer segmentation (RFM)  
+- Improves cross-selling strategies using product association insights  
 
-Database: PostgreSQL (Data Warehousing & Single Source of Truth).
+---
 
-ETL Tool: SQLAlchemy & pg8000 (Automated data loading from Python to SQL).
+## 🔄 Data Pipeline
+This project implements an end-to-end data workflow:
 
-Visualization: Power BI (Interactive Dashboarding).
+1. Raw dataset obtained in CSV format from Kaggle  
+2. Data loaded into PostgreSQL as a centralized database  
+3. Data queried and transformed using SQL  
+4. Data processed and analyzed using Python (Pandas)  
+5. Results visualized using Power BI dashboard  
 
-📂 Dataset Information
-Due to GitHub's file size limitations, only a sample of the cleaned data is uploaded here. The full original dataset can be accessed below:
+---
 
-Source: [Online Retail Dataset](https://www.kaggle.com/datasets/sowndarya23/online-retail-dataset)
+## 📊 Dashboard Preview
 
-💡 Key Business Insights
-Based on the dashboard analysis, here are the three key findings:
-
-Seasonality Patterns: Total revenue reached $8.93M, with peak performance in November 2011 ($1.04M). It is recommended that management increase stock levels two months prior to this peak season.
-
-Customer Loyalty: Loyal Customers (29.14%) and Champions (24.6%) dominate the customer base, indicating healthy retention but requiring continuous appreciation programs.
-
-Bundling Strategy: Market Basket Analysis revealed that "Alarm Clock Bakelike" product variants have a Lift value of up to 8.9x, indicating a very strong correlation between different product colors.
-
-📊 Dashboard Preview
-1. Executive Sales Overview
-Provides a macro view of business performance, including key KPIs (Revenue, Transactions, AOV) and global sales geographic distribution.
+### Executive Sales Overview
+Displays key business metrics such as Revenue, Transactions, and Average Order Value (AOV), along with global sales distribution.
 
 ![Executive Sales](dashboard/ExecutiveSales.jpg)
 
-2. Customer Strategy (RFM)
-Dissects customer profiles using RFM segmentation, featuring segment distribution via Donut Charts and Recency vs. Monetary correlations via Scatter Plots.
+### Customer Strategy (RFM)
+Visualizes customer segments and behavior patterns using RFM analysis to identify high-value and at-risk customers.
 
 ![Customer Strategy](dashboard/CustomerStrategy.jpg)
 
-3. Product Affinity (Market Basket)
-Utilizes association algorithms to identify products frequently bought together to support merchandising and cross-selling decisions.
+### Product Affinity (Market Basket)
+Highlights frequently purchased product combinations to support bundling and cross-selling strategies.
 
 ![Product Affinity](dashboard/ProductAffinity.jpg)
 
+---
 
+## 📂 Dataset
+The dataset used in this project is publicly available and sourced from Kaggle.
+
+- **Dataset Name:** Online Retail Dataset  
+- **Source:** Kaggle  
+- **Link:** [Online Retail Dataset](https://www.kaggle.com/datasets/sowndarya23/online-retail-dataset)  
+- **Note:** Due to file size limitations, only a sample of the cleaned dataset is included in this repository.
