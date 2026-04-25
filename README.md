@@ -49,3 +49,7 @@ The dataset used in this project is publicly available and sourced from Kaggle.
 - **Source:** Kaggle  
 - **Link:** [Online Retail Dataset](https://www.kaggle.com/datasets/sowndarya23/online-retail-dataset)  
 - **Note:** Due to file size limitations, only a sample of the cleaned dataset is included in this repository.
+---
+## 📬 Contact
+- **LinkedIn:** https://www.linkedin.com/in/alfin-syahrina  
+- **Email:** alfinsyahrinafina@gmail.com
